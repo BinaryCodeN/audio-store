@@ -1,0 +1,111 @@
+header {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+}
+
+.header-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-left,
+.header-center,
+.header-right,
+.language-switcher {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.nav a{
+  transform: translateY(-3px);
+  color: #0056b3;
+}
+
+.header-left .logo h1 {
+  margin: 0;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.header-left nav {
+  display: flex;
+  flex-direction: column; /* Слова в столбик */
+  margin-left: 200px; /* Отступ от логотипа */
+}
+
+.header-left nav a {
+  margin: 5px 0; /* Отступы между ссылками */
+  text-decoration: none;
+  color: #000000;
+
+}
+
+.header-center {
+  display: flex;
+  flex-direction: column; /* Слова в столбик */
+  align-items: flex-start; /* Выравнивание по верхней части */
+  margin-left: 0px; /* Отступ от ссылок */
+ 
+}
+
+.language-switcher {
+  display: flex;
+  margin-top: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-left: 0px; /* Отступ от кнопок языка */
+}
+
+.language-switcher button {
+  margin: 0 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #000000;
+   margin-left: 15px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .header-wrapper {
+    padding: 10px 15px; /* Уменьшаем отступы для мобильных устройств */
+  }
+
+  .header-left nav a,
+  .language-switcher button,
+  .social-icons img {
+    font-size: 0.9em;
+  }
+
+  .social-icons img {
+    width: 18px;
+    height: 18px;
+  }
+}
